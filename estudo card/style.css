@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+    border-radius:  20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 280px;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.card .media-icons i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 0.6;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover{
+    opacity: 1;
+}
+
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card .rating i{
+    color: #7d2ae8;
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.card .button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card .button button{
+    background: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button button:hover{
+    background: #5b1cac;
+}
+
+.swiper {
+    width: 300px;
+    height: 370px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
